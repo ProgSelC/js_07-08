@@ -1,5 +1,6 @@
  ;(function ($) {
      $(document).ready(function () {
+         //Tabs
          $('.nav-tabs a').on('click', function(e) {
              e.preventDefault();
              var $tab = $(this).parent();
@@ -17,6 +18,19 @@
                     $thisTabPane.addClass('in');
                  }, 50);
              }
+         });
+         
+         // Form
+         $('form').on('focusin mouseover','input', function(){
+             $(this).siblings('.help.hide').removeClass('hide');
+         });
+         
+         $('form').on('focusout mouseout','input', function(){
+             $(this).siblings('.help').addClass('hide');
+         });
+         
+         $('.btn-help').on('click', function() {
+             $('form .help.hide').removeClass('hide');
          });
      });
  })(jQuery);

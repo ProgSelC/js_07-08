@@ -9,7 +9,7 @@ body {
     font-size: 14px;
 }
 
-.tab-wrapper {
+.wrapper {
     margin: 5px;
     padding: 5px;
     border: 1px solid #ddd;
@@ -82,4 +82,59 @@ body {
 
 .in {
     opacity: 1;
+}
+
+label {
+    display: inline-block;
+    width: 5em;
+}
+
+fieldset {
+    padding: .75em;
+}
+
+fieldset div {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+fieldset .help {
+    display: inline-block;
+    position: absolute;
+    top: -.3em;
+    left: 18em;
+    width: 210px;
+    padding: .2em;
+    -o-transition: visibility 1s ease-out, opacity 1s ease-out;
+    -webkit-transition: visibility 1s ease-out, opacity 1s ease-out;
+    transition: visibility 1s ease-out, opacity 1s ease-out;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    opacity: 1;
+    z-index: 10;
+}
+
+fieldset .help.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn-help {
+    padding: .4em 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #f6f6f6;
+    color: #2b2b2b;
+}
+
+.btn-help:focus,
+.btn-help:hover {
+    background: #ededed;
+}
+
+.btn-help:active {
+    border: 1px solid #003eff;
+    background: #007fff;
+    color: #fff;
 }

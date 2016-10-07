@@ -8,7 +8,7 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-   <div class="tab-wrapper">
+   <div class="wrapper">
         <ul class="nav-tabs">
             <li class="active"><a href="#tab1">Tab1</a></li>
             <li><a href="#tab2">Tab2</a></li>
@@ -28,6 +28,25 @@
                 <p>Lorem3 ipsum dolor sit amet, consectetur adipisicing elit. Architecto placeat aperiam similique hic aut assumenda, nisi iusto a praesentium ratione sequi dolorum, accusamus repellat numquam excepturi odio labore repudiandae fugiat!</p>
             </div>
         </div>
+    </div>
+    <div class="wrapper">
+        <form>
+            <fieldset>
+                <div>
+                    <label for="firstname">Firstname</label><input id="firstname" name="firstname" title="Please provide your firstname.">
+                    <span class="help hide">Please provide your firstname.</span>
+                </div>
+                <div>
+                    <label for="lastname">Lastname</label><input id="lastname" name="lastname" title="Please provide also your lastname.">
+                    <span class="help hide">Please provide also your lastname.</span>
+                </div>
+                <div>
+                    <label for="address">Address</label><input id="address" name="address" title="Your home or work address.">
+                    <span class="help hide">Your home or work address.</span>
+                </div>
+            </fieldset>
+        </form>
+        <button class="btn-help">Show help</button>
     </div>
 </body>
 </html>
